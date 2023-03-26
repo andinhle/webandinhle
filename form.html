@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: arial;
+        }
+        #wrapper{
+            width: 1000px;
+            margin: 0 auto;
+            background-color: orange;
+            height: 100%;
+            
+        }
+        section{
+            display: flex;
+            margin: 0 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        form{
+            margin: 20px 0px;
+            width: 500px;
+            margin: 0 auto;
+        }
+        form p{
+            padding: 20px 0px;
+            text-align: justify;
+        }
+        form h2{
+            padding: 20px 0px;
+        }
+        article img{
+            border-radius: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            /* border: 2px solid black; */
+        }
+        article{
+            margin-top: 20px;
+            width: 35%;
+        }
+        aside{
+            margin-top: 20px;
+            width: 55%;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #ffffff;
+            height: 515px;
+        }
+        aside>h3{
+            height: 50px;
+            background-color: orangered;
+            color: #ffffff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .fa-cart-plus, .fa-cart-shopping{
+            width: 135px;
+            height: 40px;
+            background-color: orangered;
+            text-align: center;
+            line-height: 40px;
+            color: #ffffff;
+            margin-right: 15px;
+        }
+        .buy-now a{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .fa-buy-feeb{
+            display: flex;
+            align-items: center; 
+            margin: 20px 0px;
+        }
+        .fa-buy-feeb input , select{
+            height: 30px;
+            outline: none;
+            background-color: #d9d9d9;
+            border: none;
+            padding: 0px 5px;
+            margin: 0px 5px;
+            border-radius: 5px;
+        }
+        .fa-thumbs-up{
+            font-size: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .fa-share-nodes{
+            font-size: 25px;
+        }
+        .fa-buy-feeb .fa-cart-plus:hover{
+            background-color: black;
+            color: white;
+        }
+        .fa-cart-shopping:hover{
+            background-color: black;
+            color: white;
+        }
+        .fa-receipt{
+            color: orangered;
+        }
+        .img-list{
+            margin-top: 20px;
+            width: 400px;
+            display: flex;
+        }
+        .img-list img{
+            margin: 0px 3px;
+        }
+        .fa-gift{
+            color: orangered;
+        }
+        .buy-now input{
+            border: none;
+            background-color: #d9d9d9;
+            height: 25px;
+            outline: none;
+            padding: 0 5px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .back-home{
+            background-color: black;
+            color: #ffffff;
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+        }
+        .back-home span{
+            width: 130px;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        marquee{
+            width: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="back-home">
+            <span onclick="backhome()"><i onclick="backhome()" class="fa-solid fa-house"></i> Trang Chủ</span>
+            <marquee behavior="" direction=""> KHUYẾN MÃI PHỤ KIỆN TAI NGHE , CÁP SẠC, LOA ...</marquee>
+        </div>
+        
+        <section>
+            <article>
+                <img id="img-sp" src="./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg" width="400px" alt="">
+                <div class="img-list">
+                    <img  onclick="changeing()" src="./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg" width="95px" alt="">
+                    <img  onclick="changeing()" src="./images/chup-tai-ava-kd-662-600x600.jpeg" width="95px" alt="">
+                    <img  onclick="changeing()" src="./images/pin-sac-10000mah-type-c-pd-qc30-20w-hydrus-pb299s-thumb-1-600x600.jpeg" width="95px" alt="">
+                    <img  onclick="changeing()" src="./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg" width="95px" alt="">
+                </div>
+            </article>
+            <aside>
+                <h3><i class="fa-regular fa-pen-to-square fa-beat"></i> CHI TIẾT SẢN PHẨM</h3>
+                <form action="">
+                    <h2 id="heading-text">Chuột Gaming</h2>
+                    <h3 id="dongia" onchange="change()">Giá: <del>450.000 VNĐ</del> 300.000 VNĐ</h3>
+                    <p id="text">Chuột Gaming Asus TUF M3 Đen có thiết kế nhỏ gọn, cùng chất liệu nhựa có độ ma sát cao giúp cho việc cầm nắm chắc chắn hơn. Thiết kế công thái học phù hợp với người thuận tay phải. Trọng lượng chỉ 84 gram khá nhẹ, tiện dụng.
+                    </p>
+                    <div class="fa-buy-feeb">
+                        <a href=""><i class="fa-solid fa-cart-plus"> Add Cart</i></a>
+                        <label for="">Số lượng: </label>
+                        <input id="soluong" type="number" value="1" min="1" max="50" onchange="change()">
+                        <select name="select" id="select-check" onclick="select()">
+                            <option selected value="0">--Chọn Màu--</option>
+                            <option value="1">Màu đỏ</option>
+                            <option value="2">Màu xanh</option>
+                            <option value="3">Màu đen</option>
+                            <option value="4">Màu vàng</option>
+                            <option value="5">Màu trắng</option>
+                        </select>
+                        <i onclick="votecheck()" class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="buy-now">
+                        <label for=""><i class="fa-solid fa-gift fa-shake"></i> Gift</label>
+                        <input onchange="change()" id="gift-card" value="" type="text" placeholder="Nhập mã giảm giá">
+                        <h4 ><i  class="fa-solid fa-receipt"></i> Tổng Tiền : <span id="tongtien"></span></h4>
+                        <a href="" ><i onclick="select()" class="fa-solid fa-cart-shopping fa-beat"> MUA NGAY</i></a>
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </div>
+    <script>
+
+        function votecheck() {
+            var vote = document.getElementsByClassName("fa-thumbs-up");
+            vote[0].style.color = "orangered";
+        }
+        function change() {
+            const donggia = 300.000;
+            var soluong = document.getElementById("soluong");
+            const giamgia ="andinhle";
+            var user_input = document.getElementById("gift-card").value;
+            if ( user_input == giamgia) {
+                let gift = 100.000;
+                var tongtien = Number(donggia) * Number (soluong.value) - gift;
+                document .getElementById("tongtien").innerHTML = "" +tongtien.toFixed(3) + "\t VNĐ";
+            }
+            else{
+                var not = alert("Mã rỗng hoặc chưa hợp lệ vui lòng thử lại ! \n Nhập mã 'andinhle' để được giảm giá ");
+                var tongtien = Number(donggia) * Number (soluong.value);
+                document .getElementById("tongtien").innerHTML = "" +tongtien.toFixed(3) + "\t VNĐ";
+            }
+        }
+
+
+        function select(){
+            var user_select = document.getElementById("select-check").value; 
+            if (user_select == -1 || user_select == 0) {
+                alert("bạn chưa chọn màu");
+            }
+            else if (user_select >= 1) {
+                alert("Mua hàng thành công");
+            }
+        }
+
+
+        function backhome() {
+            history.back();
+
+        }
+
+
+
+        var img =[
+            "./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg",
+            "./images/chup-tai-ava-kd-662-600x600.jpeg",
+            "./images/pin-sac-10000mah-type-c-pd-qc30-20w-hydrus-pb299s-thumb-1-600x600.jpeg",
+            "./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg"
+        ];
+        var text = [
+            "Chuột Gaming Asus TUF M3 Đen có thiết kế nhỏ gọn, cùng chất liệu nhựa có độ ma sát cao giúp cho việc cầm nắm chắc chắn hơn. Thiết kế công thái học phù hợp với người thuận tay phải. Trọng lượng chỉ 84 gram khá nhẹ, tiện dụng.",
+            "Tai nghe được làm tinh xảo, bộ khung cứng cáp, có hệ thống treo tiện dụng và chụp tai phủ bên ngoài bởi lớp chất liệu mềm mại, đeo vào đầu nhẹ nhàng, không làm mỏi, đau vùng đầu - cổ - tai.",
+            "Vỏ bọc kim loại cứng cáp chống bám vân tay tốt, các góc bo tròn bảo vệ chống trầy xước và cho thiết bị nét mềm mại, gọn gàng hơn khi bảo quản trong giỏ xách, túi quần…",
+            "Chuột Gaming Asus TUF M3 Đen có thiết kế nhỏ gọn, cùng chất liệu nhựa có độ ma sát cao giúp cho việc cầm nắm chắc chắn hơn. Thiết kế công thái học phù hợp với người thuận tay phải. Trọng lượng chỉ 84 gram khá nhẹ, tiện dụng."
+        ];
+        var heading =[
+            "Chuột Gaming",
+            "Tai Nghe",
+            "Sạc Dự Phòng",
+            "Chuột Gaming"
+        ];
+        
+        var num=0;
+
+        function changeing() {
+            var click = document.getElementById("img-sp");
+            num++;
+            if (num > img.length-1) {
+                num = 0;
+            }
+            click.src = img[num];
+            click.style.border="3px solid orangered";
+            var textchange = document.getElementById("text");
+            textchange.innerHTML = text[num];
+            var hedingtextchange = document.getElementById("heading-text");
+            hedingtextchange.innerHTML = heading[num];
+        }
+    </script>
+</body>
+</html>

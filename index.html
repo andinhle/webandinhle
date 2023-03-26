@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+        <div id="wrapper">
+            <div class="header-slider">
+                <div class="img-banner-slider" onclick="myStop()">
+                    <img id="slider" src="./images/pk-xk-800-200-800x200.png" width="auto" alt="">
+                    <span id="mota">PHỤ KIỆN XẢ KHO</span>
+                    <div class="fa-solid-wrap">
+                        <i onclick="prev()" class="fa-solid fa-angle-left fa-beat-fade"></i>
+                        <i onclick="next()" class="fa-solid fa-angle-right fa-beat-fade"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="menu-list">
+                    <li><a href=""><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                    <li><a href="">Khuyến mãi</a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                    <li onclick="dark()" ondblclick="light()"><i class="fa-solid fa-circle-half-stroke fa-flip"></i></li>
+                    <span id="check-dr-li"></span>
+                </ul> 
+                <div class="form-search">
+                    <input name="search" type="search" placeholder="Tìm kiếm">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </nav>
+            <div class="nav-hot">
+                <a href=""><h3 class="fa-bounce">Sản Phẩm Hot</h3></a>
+                <marquee behavior="" direction="">KHUYẾN MÃI PHỤ KIỆN TAI NGHE , CÁP SẠC, LOA ...</marquee>
+            </div>
+            <main class="main">
+                <div class="plane-sp">
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp">
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Chuột gaming</h5>
+                            </div>
+                            <p>10$ - 15$</p>                
+                        </div>
+                    </div>
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/chup-tai-ava-kd-662-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp"> 
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Tai nghe</h5>
+                            </div>
+                            <p>10$ - 15$</p>                
+                        </div>
+                    </div>
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/pin-sac-10000mah-type-c-pd-qc30-20w-hydrus-pb299s-thumb-1-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp">
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Loa</h5>
+                            </div>
+                            <p>10$ - 15$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plane-sp">
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/chuot-gaming-asus-tuf-m3-den01-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp">
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Chuột gaming</h5>
+                            </div>
+                            <p>10$ - 15$</p>                
+                        </div>
+                    </div>
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/chup-tai-ava-kd-662-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp"> 
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Tai nghe</h5>
+                            </div>
+                            <p>10$ - 15$</p>                
+                        </div>
+                    </div>
+                    <div class="content-sp">
+                        <div class="img-sp">
+                            <img src="./images/pin-sac-10000mah-type-c-pd-qc30-20w-hydrus-pb299s-thumb-1-600x600.jpeg" width="100%" alt="anh1">
+                            <div class="buy-sp">
+                                <div class="fa-buy-feeb">
+                                    <i onclick="chuyenhuong()" class="fa-solid fa-cart-plus"></i>
+                                    <i onclick="vote()" ondblclick="novote()" class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sp">
+                            <div>
+                                <p>Tên sản phẩm</p>
+                                <h5>Loa</h5>
+                            </div>
+                            <p>10$ - 15$</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863855881417!2d105.74459841463782!3d21.038132792834823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2sFPT%20Polytechnic%20Hanoi!5e0!3m2!1sen!2s!4v1679678803056!5m2!1sen!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul class="list-footer">
+                    <li><a href="">Email: anldph30924@fpt.edu.vn</a></li>
+                </ul>
+            </footer>
+        </div>
+</body>
+</html>
