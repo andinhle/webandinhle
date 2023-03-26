@@ -82,6 +82,11 @@ marquee{
 }
 .menu-list li{
     padding: 0px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.fa-cart-shopping{
+    cursor: pointer;
 }
 .menu-list li a{
     text-decoration: none;
